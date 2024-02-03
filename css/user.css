@@ -1,0 +1,143 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:sans-serif;
+}
+.navbar{
+    display:flex;
+    width:100%;
+}
+.navbar .icon{
+    width:12.5%;
+}
+.navbar .title{
+    width:50%;
+}
+.navbar .icon img{
+    width:100%;
+    height:100%;
+}
+img{
+    width:100%;
+}
+.active{
+    width:100%;
+    display:flex;
+}
+.active .image{
+    width:50%;
+
+}
+.active .description{
+    padding:10px;
+}
+.active .description span{
+    background-color:lightgreen;
+    padding:10px;
+    margin-top:10px;
+    position:absolute;
+    top:1050px;
+    border-radius:10px;
+    cursor:pointer;
+}
+.students{
+    width:100%;
+    display:flex;
+}
+.students .agenda{
+    width:50%;
+    background-color:lightgreen;
+}
+.students .agenda h1{
+   text-align:center
+}
+.students .agenda ul{
+   display:flex;
+   flex-wrap:wrap;
+}
+.students .agenda ul li {
+    background-color:white;
+    width:150px;
+    padding:10px;
+    margin:10px;
+    list-style:none;
+    border-radius:10px;
+}
+.students .agenda ul li img{
+    width:150px;
+    height:150px;
+    border-radius:10px;
+}
+.students .agenda ul li {
+    background-color:white;
+    width:150px;
+    padding:10px;
+    margin:10px;
+}
+.students .news{
+    width:50%;
+    background-color:pink;
+}
+.students .news img{
+    width:270px;
+    height:270px;
+    height:100px;
+}
+.students .news .card{
+    padding:10px;
+    background-color:white;
+    width:270px;
+    margin:10px;
+    border-radius:10px;
+}
+.students .news h1{
+   margin-left:250px;
+}
+.students .news .flex-wrap-wrap{
+    display:flex;
+    flex-wrap:wrap;
+}
+@media screen and (max-width:740px){
+        .active{
+            display:block;
+        }
+        .active .image img{
+            width:100%;
+        }
+        .navbar .icon img{
+            width:100px;
+            height:100px;
+        }
+        .navbar .title{
+            margin-left:30px;
+            margin-top:30px;
+        }
+        .navbar .title span{
+            font-size:13px;
+            margin-top:10px;
+        }
+        .navbar .title h1{
+            font-size:13px;
+        }
+        .active .image{
+            width:100%;
+        }
+        .active .description span{
+            position:absolute;
+            top:730px;
+        }
+        .students{
+            display:block;
+        }
+        .students .agenda{
+            display:block;
+            width:100%;
+            margin-top:100px;
+        }
+        .students .agenda ul{
+           display:block;
+           margin-left:100px;
+           margin-bottom:10px;
+         }
+
+}
