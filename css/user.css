@@ -3,6 +3,9 @@
     padding:0px;
     font-family:sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .navbar{
     display:flex;
     width:100%;
@@ -12,6 +15,7 @@
 }
 .navbar .title{
     width:50%;
+    margin-top: 50px;
 }
 .navbar .icon img{
     width:100%;
@@ -32,7 +36,7 @@ img{
     padding:10px;
 }
 .active .description span{
-    background-color:lightgreen;
+    background-color: lawngreen;
     padding:10px;
     margin-top:10px;
     position:absolute;
@@ -46,7 +50,6 @@ img{
 }
 .students .agenda{
     width:50%;
-    background-color:lightgreen;
 }
 .students .agenda h1{
    text-align:center
@@ -76,7 +79,7 @@ img{
 }
 .students .news{
     width:50%;
-    background-color:pink;
+ 
 }
 .students .news img{
     width:270px;
@@ -96,6 +99,24 @@ img{
 .students .news .flex-wrap-wrap{
     display:flex;
     flex-wrap:wrap;
+}
+.students .news .flex-wrap-wrap .card button{
+    padding: 10px;
+    border: none;
+    background-color: lawngreen;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.students .news .flex-wrap-wrap .card .penilaian{
+    display: flex;
+    margin: 10px;
+}
+.students .news .flex-wrap-wrap .card .penilaian .suka{
+    margin-right: 10px;
+
+}
+.students .news .flex-wrap-wrap .card .penilaian .jelek{
+    margin: 0px 10px;
 }
 @media screen and (max-width:740px){
         .active{
@@ -134,10 +155,35 @@ img{
             width:100%;
             margin-top:100px;
         }
-        .students .agenda ul{
+        .students .agenda ul li{
            display:block;
            margin-left:100px;
            margin-bottom:10px;
          }
+         .students .agenda ul li h3{
+            font-size:15px;
+            margin: 5px;
+          }
+          .students .news{
+            width: 100%;
+          }
+          .students .news .flex-wrap-wrap{
+            margin-left: 50px;
+          }
+          .students .news .flex-wrap-wrap .card{
+            margin-top:10px ;
+          }
+          .students .news h1{
+            position: absolute;
+            top: 1750px;
+            right: 150px;
+            
+          }
+          .students .news .flex-wrap-wrap .card:nth-child(1){
+            margin-top: 100px;
+        }
+        .students .news{
+            width: 100%;
+        }
 
 }

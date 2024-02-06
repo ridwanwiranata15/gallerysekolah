@@ -1,0 +1,82 @@
+.dede{
+    display: flex;
+    width: 100%;
+}
+.dede .kiri{
+    width: 50%;
+}
+.dede .kiri .comment img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50px;
+}
+.dede .kiri .comments{
+    display: none;
+ 
+}
+.dede .kiri .comments #text{
+   margin: 10px;
+   padding: 5px;
+   border-radius:500px;
+    width: 300px;
+}
+.dede .kiri .comments button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+ } 
+.dede .kiri .comment {
+   display: flex;
+   border-radius:10px ;
+   margin: 10px;
+
+}
+.dede .kiri .comment .data{
+    margin-top: 13px;
+ }
+.dede .kiri .mark{
+   display: flex;
+}
+.dede .kiri .mark .good{
+    border: 1px solid black;
+    margin: 10px;
+    width: 70px;
+    padding: 10px;
+    border-radius: 15%;
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+}
+.dede .kiri img{
+  width: 100%;
+  height: 100%;
+}
+.dede .kiri h1{
+   text-align: center;
+}
+.dede .kiri span{
+    padding: 10px;
+}
+.dede .kanan{
+    width: 50%;
+}
+.dede .kanan .nail{
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+} 
+.dede .kanan .nail img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+@media screen and (max-width:740px){
+        .dede{
+            display: block;
+        }
+        .dede .kiri{
+            width: 100%;
+        }
+}
