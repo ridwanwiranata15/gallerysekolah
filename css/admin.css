@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+.content .navbar{
+    width: 10%;
+   background-color: rgb(0, 0, 0);
+   background-color:rgba(0, 0, 0, 0.1);
+}
+.content .navbar img{
+   width: 100px;
+   height: 100px;
+   margin-left: 20px;
+   margin-top: 10px;
+   border-radius: 100%;
+}
+.content .navbar li{
+   list-style: none;
+   margin-bottom: 30px;
+}
+.content .navbar li:hover{
+    background-color: lightgreen;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+ }
+.content .navbar li a{
+   text-decoration: none;
+ }
+.content .table{
+    width: 90%;
+    background-color:#fd79a8;
+}
+.content .table table{
+    margin: 10px;
+    border-collapse: collapse;
+    width: 92%;
+}
+.content .table table tr th, td{
+   padding: 10px;
+   border: 1px solid #ddd;
+   text-align: center;
+}
+.content .profile{
+    background-color:#1abc9c ;
+    
+    
+}
+.content .profile span{
+   position: absolute;
+   
+   
+}
+.content .profile .logo{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 100%;  
+    cursor: pointer;  
+}
+.content .profile .sub-menu-wraper{
+    
+    margin: 10px;
+    width: 240px;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    max-height: 0;
+    overflow: hidden;
+ }
+.content .profile .sub-menu-wraper .data {
+    display: flex;
+    margin: 10px;  
+    padding: 10px;
+    width: 210px;   
+ }
+.content .profile .sub-menu-wraper .data img{
+   border-radius: 100%;
+   margin-right: 10px;
+
+ 
+   
+}
+.content .profile .sub-menu-wraper .data span{
+   position: absolute;
+   right: 14px;
+   top: 10px;
+   font-size: 20px;
+   font-weight:500;
+   color: red;
+   cursor: pointer; 
+}
+.content .profile .sub-menu-wraper ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+ }
+ .content .profile .sub-menu-wraper ul li:hover{
+    background-color: rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+ }
+ .content .profile .sub-menu-wraper ul li a{
+    text-decoration: none;
+ }
+
+ .tampil{
+   min-height: 200px;
+   background-color: white;
+ }
