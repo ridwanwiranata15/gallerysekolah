@@ -3,102 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | SMK DIGITAL INDONESIA</title>
     <link rel="stylesheet" href="../css/admin.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Admin | SMK Indonesia Digital</title>
+    <link rel="icon" href="../img/SMK DIGITAL INDONESIA.png" type="image/x-icon">
 </head>
 <body>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Tambah galeri</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-           <form action="" method="post">
-                <div class="modal-body">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Judul postingan</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                    </div> 
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Posisi</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                    </div> 
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Status</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                    </div> 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Understood</button>
-                </div>
-           </form>
-          </div>
-        </div>
-      </div>
-
     <div class="content">
-        <div class="menu">
-            <img src="../img/logo.png" alt="">
+        <div class="navbar">
+            <img src="../img/SMK DIGITAL INDONESIA.png" alt="">
             <ul>
                 <li>
-                    <a href="../html/admin.html">
-                        <i class="fa-solid fa-list"></i>
-                        Kategori
-                    </a>
+                    <a href="../html/admin.html">Kategori</a>
                 </li>
                 <li>
-                    <a href="../html/post.html">
-                        <i class="fa-solid fa-signs-post"></i>
-                        Post
-                    </a>
+                    <a href="../html/post.html">Postingan</a>
                 </li>
                 <li>
-                    <a href="../html/gallery.html">
-                        <i class="fa-solid fa-images"></i>
-                        Galeri
-                    </a>
+                    <a href="../html/gallery.html">Galeri</a>
                 </li>
                 <li>
-                    <a href="../html/image.html">
-                        <i class="fa-solid fa-image"></i>
-                        Foto
-                    </a>
+                    <a href="../html/image.html">Gambar</a>
                 </li>
             </ul>
-    </div>
+        </div>
         <div class="table">
-             <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Tambah galeri
-            </button>
-            <table class="table"> 
+            <button class="create" id="myBtn">Tambah Galeri</button>
+            <table>
                 <tr>
-                    <th>No</th>
-                    <th>Judul Posting</th>
-                    <th>Kategori</th>
-                    <th>isi</th>
+                    <th>No.</th>
+                    <th>Judul Postingan</th>
+                    <th>Posisi</th>
                     <th>Status</th>
                     <th>Aksi</th>
                 </tr>
-                <tr>
-                    
-                </tr>
+               
             </table>
         </div>
         <div class="profile">
-            <img src="../img/profil.png" alt="" id="profile">
-            <ul id="dede">
-                <li >Profile</li>
-                <li>Logout</li>
-            </ul>
+            
+            <img src="../img/profil.png" alt="" width="50px" height="50px" class="logo" id="logo">
+            <div class="sub-menu-wraper" id="sub-menu-wrapper">
+                <div class="data">
+                    <span id="close">X</span>
+                    <img src="../img/profil.png" alt="" width="50px" height="50px">
+                    <h3>Ridwan wiranata</h3>
+                </div>
+                <hr>
+                <ul>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <script src="../js/all.min.js"></script>
+   <div id="myModal" class="modal">
+        <div class="modal_content">
+            <span class="close" id="tutup">&times;</span>
+           <h3>Tambah Galeri</h3>
+           <hr>
+           <form action="" method="post">
+            <ul>
+                <li>
+                    <input type="text" name="title" id="" placeholder="Judul Postingan">
+                </li>
+                <li>
+                    <input type="text" name="position" id="" placeholder="posisi">
+                </li>
+                <li>
+                    <input type="text" name="status" id="" placeholder="Status">
+                </li>
+           </ul>
+           <button type="submit">Tambah</button>
+           </form>
+        </div>
+   </div>    
     <script src="../js/admin.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

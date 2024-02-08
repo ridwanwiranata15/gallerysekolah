@@ -13,30 +13,26 @@
             <img src="../img/SMK DIGITAL INDONESIA.png" alt="">
             <ul>
                 <li>
-                    <a href="">Kategori</a>
+                    <a href="../html/admin.html">Kategori</a>
                 </li>
                 <li>
-                    <a href="">Postingan</a>
+                    <a href="../html/post.html">Postingan</a>
                 </li>
                 <li>
-                    <a href="">Galeri</a>
+                    <a href="../html/gallery.html">Galeri</a>
                 </li>
                 <li>
-                    <a href="">Gambar</a>
+                    <a href="../html/image.html">Gambar</a>
                 </li>
             </ul>
         </div>
         <div class="table">
+            <button class="create" id="myBtn">Tambah Kategori</button>
             <table>
                 <tr>
                     <th>No.</th>
                     <th>Judul Kategori</th>
                     <th>Aksi</th>
-                </tr>
-                <tr>
-                    <td>No.</td>
-                    <td>Judul Kategori</td>
-                    <td>aksi</td>
                 </tr>
             </table>
         </div>
@@ -57,7 +53,21 @@
             </div>
         </div>
     </div>
-    
+   <div id="myModal" class="modal">
+        <div class="modal_content">
+            <span class="close" id="tutup">&times;</span>
+           <h3>Tambah kategori</h3>
+           <hr>
+           <form action="" method="post">
+            <ul>
+                <li>
+                    <input type="text" name="title" id="" placeholder="Judul kategori">
+                </li>
+           </ul>
+           <button type="submit">Tambah</button>
+           </form>
+        </div>
+   </div>    
     <script src="../js/admin.js"></script>
 </body>
 </html>
